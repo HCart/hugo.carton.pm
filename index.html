@@ -1,18 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+  
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hugo Carton</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>3ColorResume</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-51302339-1', 'error.html');
+      ga('send', 'pageview');
+    </script>
   </head>
-
   <body>
-    <h1>Hello, world!</h1>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="img/avatar.jpg" alt="avatar">
+            </div>
+            <div id="text-header">
+              <h1>Hello,<br> my name is <span>Hugo</span><sup>23yo</sup> and this is my resume/cv</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2>About Me</h2>
+            <p>As a graduate engineer, I am looking for a motivating, challenging first job where I can improve my technical skills. Above all, I want to use cutting edge technologies, in a positive work environment.</p>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2>Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">1991</div>
+                <div class="description pull-right">
+                  <h3>I was born in Nantes, France</h3>
+                </p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2009</div>
+                <div class="description pull-right">
+                  <h3>Secondary school specializing in physics</h3>
+                  <p>French Baccalaureate.</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2011</div>
+                <div class="description pull-right">
+                  <h3>French DUT, Two-year intensive university diploma, Computer science</h3>
+                  <p>A practical degree covering various topics like database languages, object oriented programming (Java, C++), user Interface design, web programming (PHP/HTML) and computer networks fundamentals.</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2014</div>
+                <div class="description pull-right">
+                  <h3>Master of engineering degree, Computer science</h3>
+                  <p>A full stack engineer formation based on innovation techniques in computing. It also includes business management (finances within a company or law courses) and mathematics such as Cryptography and Game thoery.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- EXPERIENCES -->
+          <div class="box">
+            <h2>Experiences</h2>
+            <div class="job clearfix">
+              <div class="col-xs-3">
+                <div class="where">Atos Worldline</div>
+                <div class="year">2014 March - Aug.</div>
+              </div>
+              <div class="col-xs-9">
+                <div class="profession">Work placement as an Engineer</div>
+                <div class="description">Maintenance and development of a Multi-channel processing solution written in Java, within a team. A modern Eclipse environment was used including frameworks as Spring, Hibernate, Maven and also the use of continuous integration (Jenkins, Nexus, SonarQube)</div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="col-xs-3">
+                <div class="where">Arkema</div>
+                <div class="year">2013 May - July</div>
+              </div>
+              <div class="col-xs-9">
+                <div class="profession">Work placement as an assistan engineer</div>
+                <div class="description">Development of an intranet using open source tools (OpenCMS, JEE, JS, HTML, CSS), including trips from Lyon to Paris. OpenCMS alows designing components within a page such as a teasers, news feeds, articles, menus in Java. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2>Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">+33 06 78 45 18 74</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right">carton.hugo@gmail.com</div>
+            </div>
+           <!-- <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
+              <div class="title pull-right">Twitter</div>
+              <div class="description pull-right">https://twitter.com/WordPress</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-facebook fa-fw"></span></div>
+              <div class="title pull-right">Facebook</div>
+              <div class="description pull-right">https://www.facebook.com/facebook</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-skype fa-fw"></span></div>
+              <div class="title pull-right">Skype</div>
+              <div class="description pull-right">kamsolutions.pl</div>
+            </div>
+          </div> -->
+          <!-- SKILLS -->
+          <div class="box">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="item-skills" data-percent="0.85">Java</div>
+              <div class="item-skills" data-percent="0.80">HTML/CSS</div>
+              <div class="item-skills" data-percent="0.75">Mockito/JUnit</div>              
+              <div class="item-skills" data-percent="0.70">Maven</div>
+              <div class="item-skills" data-percent="0.65">Spring</div>
+              <div class="item-skills" data-percent="0.65">Hibernate</div>              
+              <div class="item-skills" data-percent="0.50">Ajax</div>
+              <div class="item-skills" data-percent="0.30">Jenkins</div>
+              <div class="item-skills" data-percent="0.25">Android</div>
+              <div class="skills-legend clearfix">
+                <div class="legend-left legend">Beginner</div>
+                <div class="legend-left legend"><span>Proficient</span></div>
+                <div class="legend-right legend"><span>Expert</span></div>
+                <div class="legend-right legend">Master</div>
+              </div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2>Languages</h2>
+            <div id="language-skills">
+              <div class="skill">French <div class="icons pull-right"><div style="width: 100%;" class="icons-red"></div></div></div>
+              <div class="skill">English <div class="icons pull-right"><div style="width: 92%;" class="icons-red"></div></div></div>
+              <div class="skill">Spanish <div class="icons pull-right"><div style="width: 40%;" class="icons-red"></div></div></div>
+            </div>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2>Hobbies</h2>
+            <div class="hobby">Tennis</div>
+            <div class="hobby">Rugby</div>
+            <div class="hobby">Mobile phones</div>
+            <div class="hobby">Hardware technologies</div>
+            <div class="hobby">Programming</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JQUERY -->
+    <script src="js/jquery.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/scripts.js"></script>
   </body>
 
 </html>
